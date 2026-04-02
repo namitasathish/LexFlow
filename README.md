@@ -3,8 +3,6 @@
 A dual-portal Legal CRM and workflow system designed for lawyers and clients.
 LexFlow enables structured case management, secure communication, document handling, and automated deadline tracking with an offline-first approach.
 
----
-
 ## Overview
 
 LexFlow provides two role-based interfaces:
@@ -13,8 +11,6 @@ LexFlow provides two role-based interfaces:
 * **Client Portal** — case visibility, communication, and document sharing
 
 The system is built on a relational database ensuring consistency, data isolation, and reliability without constant internet access.
-
----
 
 ## Key Features
 
@@ -37,7 +33,6 @@ The system is built on a relational database ensuring consistency, data isolatio
 * Track payments and dues
 * Provide feedback after case completion
 
----
 
 ## System Architecture
 
@@ -59,7 +54,7 @@ SELECT * FROM cases WHERE client_id = ?
 
 Each user can only access their own data through role-based queries.
 
----
+
 
 ## Technology Stack
 
@@ -69,8 +64,6 @@ Each user can only access their own data through role-based queries.
 * Backend (optional): Node.js + Express (chat relay)
 * Storage: Async Storage
 * Notifications: Expo Notifications
-
----
 
 ## Setup
 
@@ -92,8 +85,6 @@ node server.js
 npx expo start
 ```
 
----
-
 ## Testing
 
 Run all tests:
@@ -104,7 +95,6 @@ npm test
 
 Covers database operations, authentication, notifications, messaging, and workflows.
 
----
 
 ## Security
 
@@ -112,7 +102,5 @@ Covers database operations, authentication, notifications, messaging, and workfl
 * Client-specific data isolation
 * Safe state reset on navigation
 * Data isolation
-
----
 
 
